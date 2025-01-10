@@ -3,6 +3,7 @@ This repository contains an image classification project using the CIFAR-100 dat
 1. Hand-Crafted Features
 2. Neural Networks (NN)
 3. Convolutional Neural Networks (CNN)
+
 This project was part of my MSc in Artificial Intelligence and demonstrates skills in computer vision, model development, and performance evaluation.
 
 ## Dataset Overview
