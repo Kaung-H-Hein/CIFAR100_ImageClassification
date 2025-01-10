@@ -71,26 +71,26 @@ The preprocessing pipeline included the following steps:
 
 ### Model Architecture
 A custom neural network was designed with the following structure:
-  - Flatten Layer: Converts 2D images into 1D vectors.
-  - Hidden Layer: Fully connected layer with 500 hidden units.
-  - Output Layer: Fully connected layer mapping to the 15 selected classes.
+  - **Flatten Layer**: Converts 2D images into 1D vectors.
+  - **Hidden Layer**: Fully connected layer with 500 hidden units.
+  - **Output Layer**: Fully connected layer mapping to the 15 selected classes.
 
 ### Training and Evaluation
-Training Setup:
-- Loss Function: CrossEntropyLoss for multi-class classification.
-- Optimiser: Stochastic Gradient Descent (SGD) with a learning rate of 0.0001.
-- Epochs: 20, with progress tracked using tqdm.
+**Training Setup**:
+- **Loss Function**: CrossEntropyLoss for multi-class classification.
+- **Optimiser**: Stochastic Gradient Descent (SGD) with a learning rate of 0.0001.
+- **Epochs**: 20, with progress tracked using tqdm.
   
-Training Procedure:
+**Training Procedure**:
 - Forward pass, loss calculation, backpropagation, and parameter updates were performed iteratively.
 - Average loss per epoch was calculated for performance monitoring.
 
 ### Evaluation:
 The model was evaluated on the test dataset using a custom evaluation function.
 
-Metrics:
-- Loss: Average classification loss.
-- Accuracy: Proportion of correctly predicted labels.
+**Metrics**:
+- **Loss**: Average classification loss.
+- **Accuracy**: Proportion of correctly predicted labels.
 
 Results were summarised, and a confusion matrix was generated for error analysis.
 
