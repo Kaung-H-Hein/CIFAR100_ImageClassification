@@ -12,6 +12,7 @@ The CIFAR-100 dataset consists of:
 - 20 Superclasses: Classes grouped into broader categories.
 - Fine Labels: Specific class labels.
 - Coarse Labels: Grouped superclass labels.
+
 For this project, 15 classes were selected to build and train the models. 
 
 ## Outcomes
