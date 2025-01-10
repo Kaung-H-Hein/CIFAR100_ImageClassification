@@ -50,10 +50,10 @@ Three models were built using different hand-crafted feature extraction methods:
    - **Fisher Vector Encoding**: Applied Fisher vector representation using a Gaussian Mixture Model (GMM) with K-modes.  
    - **Classification**: Trained a `LinearSVC` on Fisher vector-encoded features.  
 
-#### **Evaluation**  
+### Evaluation  
 To evaluate the performance of these models, confusion matrices were generated and analysed. 
 
-#### **Key Libraries Used**  
+### Key Libraries Used  
 - **PyTorch and Torchvision**: For data handling and preprocessing.  
 - **OpenCV (cv2)**: For image resizing and preprocessing.  
 - **Scikit-Image**: For feature extraction (SIFT, ORB, Fisher vectors).  
