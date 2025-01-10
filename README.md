@@ -21,11 +21,8 @@ For this project, 15 classes were selected to build and train the models.
 - Provides a clear comparison of the strengths and limitations of each approach on the same dataset.
 
 ## 1. Hand-Crafted Features Approach
-### Hand-Crafted Features Approach  
-This section details the hand-crafted features-based approach for image classification, which involved extensive preprocessing, feature extraction, and model development. Below is a step-by-step description:  
-
 ### Data Preprocessing  
-The data preprocessing pipeline was essential for preparing the CIFAR-100 dataset for feature extraction and classification:  
+The preprocessing pipeline included the following steps: 
   1. **Initial Data Inspection**: Conducted an overview of the dataset to understand its structure and distribution.  
   2. **Class Selection**: Randomly selected 15 classes from the CIFAR-100 dataset for the study.  
   3. **Image Visualisation**: Visualised sample images from the selected classes to ensure proper selection.  
@@ -60,3 +57,41 @@ To evaluate the performance of these models, confusion matrices were generated a
 - **Scikit-learn**: For clustering (KMeans), model training (LinearSVC), and evaluation (confusion matrices).  
 
 This approach showcases the potential of traditional computer vision methods for image classification, providing a strong baseline for comparison with neural network-based techniques.
+
+## 2. Neural Network Approach
+### Data Preprocessing
+The preprocessing pipeline included the following steps:
+  1. **Class Selection**: Randomly selected 15 classes from the CIFAR-100 dataset.
+  2. **Image Resizing**: Resized images to 160×160 pixels using cv2.
+  3. **Colour Space Conversion**: Converted images to grayscale to reduce complexity.
+  4. **Contrast Enhancement**: Improved image contrast for better feature representation.
+  5. **Tensor Transformation**: Transformed images into tensors for PyTorch compatibility.
+  6. **Normalization**: Scaled pixel values to a range suitable for the model.
+  7. **Dataset Preparation**: Prepared training and testing datasets, remapped class indices, and batched data for efficient processing.
+
+### Model Architecture
+A custom neural network was designed with the following structure:
+  - Flatten Layer: Converts 2D images into 1D vectors.
+  - Hidden Layer: Fully connected layer with 500 hidden units.
+  - Output Layer: Fully connected layer mapping to the 15 selected classes.
+
+### Training and Evaluation
+Training Setup:
+- Loss Function: CrossEntropyLoss for multi-class classification.
+- Optimiser: Stochastic Gradient Descent (SGD) with a learning rate of 0.0001.
+- Epochs: 20, with progress tracked using tqdm.
+  
+Training Procedure:
+- Forward pass, loss calculation, backpropagation, and parameter updates were performed iteratively.
+- Average loss per epoch was calculated for performance monitoring.
+
+### Evaluation:
+The model was evaluated on the test dataset using a custom evaluation function.
+
+Metrics:
+- Loss: Average classification loss.
+- Accuracy: Proportion of correctly predicted labels.
+
+Results were summarised, and a confusion matrix was generated for error analysis.
+
+This approach effectively showcased the neural network's ability to classify images by learning feature representations with a straightforward architecture.
