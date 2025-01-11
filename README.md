@@ -85,8 +85,7 @@ Results were summarised, and a confusion matrix was generated for error analysis
 
 ## 3. Convolutional Neural Network (CNN) Approach
 
-In the model architecture follows the **TinyVGG** design, which consists of two convolutional blocks and a fully connected classifier, as described in the original [CNN Explainer](https://poloclub.github.io/cnn-explainer/).
-
+In the model architecture follows the **TinyVGG** design, which consists of two convolutional blocks and a fully connected classifier.
 ### Data Preprocessing
   1. **Class Selection**: Randomly selected 15 classes from the CIFAR-100 dataset.
   2. **Image Resizing**: Resized images to 160×160 pixels using `cv2` to standardise input dimensions.
