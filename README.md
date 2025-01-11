@@ -81,7 +81,7 @@ A simple custom neural network was designed with the following structure:
 - Training: The model was trained over 20 epochs, with the loss and accuracy being computed at the end of each epoch.
 - Testing: After each epoch, the model's performance was evaluated on the test set to assess its ability to generalise to unseen data.
 
-Results were summarised, and a confusion matrix was generated for error analysis. This approach effectively showcased the neural network's ability to classify images by learning feature representations with a straightforward architecture.
+Results were summarised for error analysis. This approach effectively showcased the neural network's ability to classify images by learning feature representations with a straightforward architecture.
 
 ## 3. Convolutional Neural Network (CNN) Approach
 
